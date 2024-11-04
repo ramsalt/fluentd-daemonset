@@ -1,5 +1,5 @@
-ARG FLUENTD_VERSION=v1.16.3
-FROM fluent/fluentd-kubernetes-daemonset:${FLUENTD_VERSION}-debian-opensearch-1.0
+ARG FLUENTD_VERSION=v1.17.1
+FROM fluent/fluentd-kubernetes-daemonset:${FLUENTD_VERSION}-debian-opensearch-amd64-1.2
 
 USER root
 
