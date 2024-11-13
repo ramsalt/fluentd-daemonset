@@ -3,7 +3,7 @@ FROM fluent/fluentd-kubernetes-daemonset:${FLUENTD_VERSION}-debian-opensearch-am
 
 USER root
 
-RUN fluent-gem install fluent-plugin-wodby --version=">=0.1.8" && \
+RUN fluent-gem install fluent-plugin-wodby --version=">=0.3.0" && \
     fluent-gem install fluent-plugin-dedot_filter --version=">=1.0.0" && \
     gem sources --clear-all
 
